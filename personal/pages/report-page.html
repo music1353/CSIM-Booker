@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>report-page</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/set-fonts.css">
+    <link rel="stylesheet" href="../css/report-page-style.css">
+    <link rel="stylesheet" href="../css/rwd-navbar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/report-page.js"></script>
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav id="navbar">
+        <div class="ui top fixed borderless menu">
+            <div class="ui container">
+                <a href="../index.html" class="header item">CSIM Booker</a>
+                <div class="right menu" id="cm-menu">
+                    <a href="post-page.html" class="item">刊登教材</a>
+                    <a href="borrow-page.html" class="item">借閱教材</a>
+                    <div class="ui dropdown item">
+                        <img class="ui avatar image" src="../images/navbar-user-img/man.png">&nbsp;蘇靖軒
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="personal-page.html" class="item"><i class="user circle icon"></i>個人資料</a>
+                            <a href="message-page.html" class="item"><i class="alarm icon"><div class="floating ui red label">22</div></i>通知訊息</a>
+                            <a href="history-page.html" class="item"><i class="cube icon"></i>歷史紀錄</a>
+                            <a href="borrowing-page.html" class="item"><i class="book icon"></i>借閱中書籍</a>
+                            <a href="renting-page.html" class="item"><i class="road icon"></i>出租中書籍</a>
+                            <div class="ui divider"></div>
+                            <a href="report-page.html" class="item"><i class="remove user icon"></i>檢舉專區</a>
+                            <div class="ui divider"></div>
+                            <a href="#" class="item"><i class="sign out icon"></i>登出</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right menu" id="rwd-menu">
+                    <div class="ui dropdown item">
+                        <i class="sidebar icon"></i>
+                        <div class="menu">
+                            <a href="post-page.html" class="item">刊登教材</a>
+                            <a href="borrow-page.html" class="item">借閱教材</a>
+                            <div class="divider"></div>
+                            <a href="personal-page.html" class="item"><i class="user circle icon"></i>個人資料</a>
+                            <a href="message-page.html" class="item"><i class="alarm icon"><div class="floating ui red label">22</div></i>通知訊息</a>
+                            <a href="history-page.html" class="item"><i class="cube icon"></i>歷史紀錄</a>
+                            <a href="borrowing-page.html" class="item"><i class="book icon"></i>借閱中書籍</a>
+                            <a href="renting-page.html" class="item"><i class="road icon"></i>出租中書籍</a>
+                            <div class="ui divider"></div>
+                            <a href="report-page.html" class="item"><i class="remove user icon"></i>檢舉專區</a>
+                            <div class="ui divider"></div>
+                            <a href="#" class="item"><i class="sign out icon"></i>登出</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- report-section start -->
+    <section id="report-section">
+        <div class="ui container segment">
+            <h1>檢舉專區</h1>
+            <div class="report-form">
+                <div class="ui grid">
+                    <div class="four wide computer two wide mobile column"></div>
+                    <div class="eight wide computer twelve wide mobile column">
+                        <form class="ui form" method="" action="">
+                            <div class="nine wide field">
+                                <label>被檢舉人學號</label>
+                                <input type="number" placeholder="Reported ID" name="reportID">
+                            </div>
+                            <div class="ui field">
+                                <label>檢舉事由</label>
+                                <div class="ui fluid selection dropdown" id="report-reason-dropdown">
+                                    <input type="hidden" name="changeReason">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Select Report Reason</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="destroy-book">破壞借閱書籍</div>
+                                        <div class="item" data-value="late-book">未準時歸還書籍</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="ui green button" type="submit" id="reportConfirmBtn" value="確認">
+                            <div class="ui error message"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="four wide computer two wide mobile column"></div>
+            </div>
+        </div>
+    </section>
+    <!-- report-section end -->
+
+    <!-- post-modal start -->
+    <div class="post-modal">
+        <div class="ui mini modal">
+            <div class="header" style="text-align: center;">確定刊登</div>
+            <div class="content">確認刊登的內容都沒問題，並且發佈到平台上嗎？</div>
+            <div class="actions">
+                <div class="ui cancel red button">取消</div>
+                <button class="ui right labeled icon green button"><i class="checkmark icon"></i>確定</button>
+            </div>
+        </div>
+    </div>
+    <!-- post-modal end -->
+
+    <!-- footer start -->
+    <footer>
+        <h5>CSIM Booker &copy; 2017. All rights reserved</h5>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+</html>

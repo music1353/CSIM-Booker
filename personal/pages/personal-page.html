@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>After login Index - personal</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/set-fonts.css">
+    <link rel="stylesheet" href="../css/personal-page-style.css">
+    <link rel="stylesheet" href="../css/rwd-navbar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script src="../js/personal-page.js"></script>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav id="navbar">
+        <div class="ui top fixed borderless menu">
+            <div class="ui container">
+                <a href="../index.html" class="header item">CSIM Booker</a>
+                <div class="right menu" id="cm-menu">
+                    <a href="post-page.html" class="item">刊登教材</a>
+                    <a href="borrow-page.html" class="item">借閱教材</a>
+                    <div class="ui dropdown item">
+                        <img class="ui avatar image" src="../images/navbar-user-img/man.png">&nbsp;蘇靖軒
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="personal-page.html" class="item"><i class="user circle icon"></i>個人資料</a>
+                            <a href="message-page.html" class="item"><i class="alarm icon"><div class="floating ui red label">22</div></i>通知訊息</a>
+                            <a href="history-page.html" class="item"><i class="cube icon"></i>歷史紀錄</a>
+                            <a href="borrowing-page.html" class="item"><i class="book icon"></i>借閱中書籍</a>
+                            <a href="renting-page.html" class="item"><i class="road icon"></i>出租中書籍</a>
+                            <div class="ui divider"></div>
+                            <a href="report-page.html" class="item"><i class="remove user icon"></i>檢舉專區</a>
+                            <div class="ui divider"></div>
+                            <a href="#" class="item"><i class="sign out icon"></i>登出</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right menu" id="rwd-menu">
+                    <div class="ui dropdown item">
+                        <i class="sidebar icon"></i>
+                        <div class="menu">
+                            <a href="post-page.html" class="item">刊登教材</a>
+                            <a href="borrow-page.html" class="item">借閱教材</a>
+                            <div class="divider"></div>
+                            <a href="personal-page.html" class="item"><i class="user circle icon"></i>個人資料</a>
+                            <a href="message-page.html" class="item"><i class="alarm icon"><div class="floating ui red label">22</div></i>通知訊息</a>
+                            <a href="history-page.html" class="item"><i class="cube icon"></i>歷史紀錄</a>
+                            <a href="borrowing-page.html" class="item"><i class="book icon"></i>借閱中書籍</a>
+                            <a href="renting-page.html" class="item"><i class="road icon"></i>出租中書籍</a>
+                            <div class="ui divider"></div>
+                            <a href="report-page.html" class="item"><i class="remove user icon"></i>檢舉專區</a>
+                            <div class="ui divider"></div>
+                            <a href="#" class="item"><i class="sign out icon"></i>登出</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- personal-section start -->
+    <section id="personal-section">
+        <div class="ui container segment">
+            <div class="personal-title">
+                <h1>個人資料</h1>
+            </div>
+            <div class="personal-form">
+                <div class="ui grid">
+                    <div class="four wide computer two wide mobile column"></div>
+                    <div class="eight wide computer twelve wide mobile column">
+                        <form class="ui form" action="" method="">
+                            <div class="ui fields">
+                                <div class="eight wide field required">
+                                    <label>姓名</label>
+                                    <input type="text" value="蘇靖軒" required>
+                                </div>
+                                <div class="eight wide field">
+                                    <label>學號</label>
+                                    <input type="text" value="04156147" readonly>
+                                </div>
+                            </div>
+                            <div class="ui fields">
+                                <div class="eight wide field">
+                                    <label>生日</label>
+                                    <input type="date" value="1997-04-05" readonly>
+                                </div>
+                                <div class="eight wide field required">
+                                    <label>手機</label>
+                                    <input type="tel" value="0989000628" required>
+                                </div>
+                            </div>
+                            <div class="sixteen wide field">
+                                <label>信箱(帳號)</label>
+                                <input type="email" value="04156147@scu.edu.tw" readonly>
+                            </div>
+                            <div class="ten wide computer sixteen wide mobile field">
+                                <label>密碼</label>
+                                <div class="ui icon input" id="origin-password">
+                                    <input type="password" value="asda21421" readonly>
+                                    <i class="unhide link icon" id="showPasswordIcon"></i>
+                                </div>
+                            </div>
+                            <div class="ui fields">
+                                <div class="eight wide field">
+                                    <label>更改密碼</label>
+                                    <input type="password" placeholder="請輸入新密碼">
+                                </div>
+                                <div class="eight wide field">
+                                    <label>確認密碼</label>
+                                    <input type="password" placeholder="請確認新密碼">
+                                </div>
+                            </div>
+                            <input class="ui green button" type="submit" value="確認">
+                        </form>
+                    </div>
+                </div>
+                <div class="four wide computer two wide mobile column"></div>
+            </div>
+        </div>
+    </section>
+    <!-- personal-section end -->
+
+    <!-- footer start -->
+    <footer>
+        <h5>CSIM Booker &copy; 2017. All rights reserved</h5>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>

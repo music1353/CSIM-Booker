@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>history-page</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/timelify.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/set-fonts.css">
+    <link rel="stylesheet" href="../css/history-page-style.css">
+    <link rel="stylesheet" href="../css/rwd-navbar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script src="../js/timeline/jquery.timelify.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/history-page.js"></script>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav id="navbar">
+        <div class="ui top fixed borderless menu">
+            <div class="ui container">
+                <a href="../index.html" class="header item">CSIM Booker</a>
+                <div class="right menu" id="cm-menu">
+                    <a href="post-page.html" class="item">刊登教材</a>
+                    <a href="borrow-page.html" class="item">借閱教材</a>
+                    <div class="ui dropdown item">
+                        <img class="ui avatar image" src="../images/navbar-user-img/man.png">&nbsp;蘇靖軒
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="personal-page.html" class="item"><i class="user circle icon"></i>個人資料</a>
+                            <a href="message-page.html" class="item"><i class="alarm icon"><div class="floating ui red label">22</div></i>通知訊息</a>
+                            <a href="history-page.html" class="item"><i class="cube icon"></i>歷史紀錄</a>
+                            <a href="borrowing-page.html" class="item"><i class="book icon"></i>借閱中書籍</a>
+                            <a href="renting-page.html" class="item"><i class="road icon"></i>出租中書籍</a>
+                            <div class="ui divider"></div>
+                            <a href="report-page.html" class="item"><i class="remove user icon"></i>檢舉專區</a>
+                            <div class="ui divider"></div>
+                            <a href="#" class="item"><i class="sign out icon"></i>登出</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right menu" id="rwd-menu">
+                    <div class="ui dropdown item">
+                        <i class="sidebar icon"></i>
+                        <div class="menu">
+                            <a href="post-page.html" class="item">刊登教材</a>
+                            <a href="borrow-page.html" class="item">借閱教材</a>
+                            <div class="divider"></div>
+                            <a href="personal-page.html" class="item"><i class="user circle icon"></i>個人資料</a>
+                            <a href="message-page.html" class="item"><i class="alarm icon"><div class="floating ui red label">22</div></i>通知訊息</a>
+                            <a href="history-page.html" class="item"><i class="cube icon"></i>歷史紀錄</a>
+                            <a href="borrowing-page.html" class="item"><i class="book icon"></i>借閱中書籍</a>
+                            <a href="renting-page.html" class="item"><i class="road icon"></i>出租中書籍</a>
+                            <div class="ui divider"></div>
+                            <a href="report-page.html" class="item"><i class="remove user icon"></i>檢舉專區</a>
+                            <div class="ui divider"></div>
+                            <a href="#" class="item"><i class="sign out icon"></i>登出</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- history-section start -->
+    <section id="history-section">
+        <div class="ui container segment">
+            <h1>歷史紀錄</h1>
+            <div class="timeline">
+                <h2>2017</h2>
+                <ul class="timeline-items">
+                    <li class="is-hidden timeline-item">
+                        <h3>完成註冊</h3>
+                        <hr>
+                        <p>歡迎加入共享書籍平台＾＿＾</p>
+                        <hr>
+                        <time>9/20</time>
+                    </li>
+                    <li class="is-hidden timeline-item inverted">
+                        <h3>租借書籍</h3>
+                        <hr>
+                        <p>向阿冠借了微積分</p>
+                        <hr>
+                        <time>9/23</time>
+                    </li>
+                    <li class="is-hidden timeline-item">
+                        <h3>歸還書籍</h3>
+                        <hr>
+                        <p>將微積分歸還給阿冠</p>
+                        <hr>
+                        <time>10/22</time>
+                    </li>
+                </ul>
+                <h2>2018</h2>
+                <ul class="timeline-items">
+                    <li class="is-hidden timeline-item">
+                        <h3>完成註冊</h3>
+                        <hr>
+                        <p>歡迎加入共享書籍平台＾＿＾</p>
+                        <hr>
+                        <time>9/20</time>
+                    </li>
+                    <li class="is-hidden timeline-item inverted">
+                        <h3>租借書籍</h3>
+                        <hr>
+                        <p>向阿冠借了微積分</p>
+                        <hr>
+                        <time>9/23</time>
+                    </li>
+                    <li class="is-hidden timeline-item">
+                        <h3>歸還書籍</h3>
+                        <hr>
+                        <p>將微積分歸還給阿冠</p>
+                        <hr>
+                        <time>10/22</time>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- history-section end -->
+
+    <!-- footer start -->
+    <footer>
+        <h5>CSIM Booker &copy; 2017. All rights reserved</h5>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+</html>
