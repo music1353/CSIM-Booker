@@ -59,9 +59,9 @@ button,
 }
 
 
-/* signInButton */
+/* signUpButton */
 
-#signInButton {
+#signUpButton {
     width: 60px;
     height: 35px;
     text-align: center;
@@ -73,15 +73,8 @@ button,
     transition: all .5s ease;
 }
 
-#signInButton:hover {
+#signUpButton:hover {
     background-color: #1f984d;
-}
-
-
-/* signInModal */
-
-#signInModal > .header {
-    text-align: center;
 }
 
 
