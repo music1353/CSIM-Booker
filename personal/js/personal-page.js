@@ -10,18 +10,19 @@ $(function () {
         }
     });
     
-    // origin-password click show
-    $('#showPasswordIcon').bind('click', function () {
-        $('#origin-password>input').attr("type", "text");
-        $('#origin-password>.unhide.link.icon').attr("id", "hidePasswordIcon");
-        $('#origin-password>.unhide.link.icon').attr("class", "hide link icon");
-    });
-
-    // origin-password click hidden
-    $('#hidePasswordIcon').bind('click', function () {
-        $('#origin-password>input').attr("type", "password");
-        $('#origin-password>.hide.link.icon').attr("id", "showPasswordIcon");
-        $('#origin-password>.unhide.link.icon').attr("class", "unhide link icon");
+    // show and hide password
+    var count = 0;
+    $('#passwordIcon').bind('click', function(){
+        if( count==0 ){
+            $('#origin-password>input').attr("type", "text");
+            $('#origin-password>.unhide.link.icon').attr("class", "hide link icon");
+            count++;
+        }
+        else if( count==1 ){
+            $('#origin-password>input').attr("type", "password");
+            $('#origin-password>.hide.link.icon').attr("class", "unhide link icon");
+            count--;
+        }
     });
 
 });
