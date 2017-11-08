@@ -3,7 +3,6 @@
 
 /* set all fonts */
 
-/*
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 h1,
 h2,
@@ -17,27 +16,6 @@ button,
 * {
     font-family: 'PingFang SC', 'Noto Sans TC', sans-serif;
 }
-*/
-
-@font-face {
-    font-family: 'PingFang SC';
-    src: url('../../font/PingFang.ttf');
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-button,
-input,
-* {
-    font-family: 'PingFang SC';
-}
-
 
 /* navbar */
 

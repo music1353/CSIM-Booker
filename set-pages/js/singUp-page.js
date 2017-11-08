@@ -64,32 +64,27 @@ $(function () {
                     prompt: '請選擇您的性別'
                 }]
             },
-            schoolID: {
-                identifier: 'schoolID',
+            account: {
+                identifier: 'account',
                 rules: [{
                     type: 'empty',
                     prompt: '請輸入您的學號'
                 }]
             },
-            birthday: {
-                identifier: 'birthday',
+            password: {
+                identifier: 'password',
                 rules: [{
                     type: 'empty',
-                    prompt: '請輸入您的生日'
+                    prompt: '請輸入您的密碼'
                 }]
             },
-            telephone: {
-                rules: [
-                    {
-                        type: 'empty',
-                        prompt: '請輸入您的手機'
-                    },
-                    {
-                        type: 'regExp[/^09\d{2}-?\d{3}-?\d{3}$/]',
-                        prompt: '請輸入正確的手機格式'
-                    }
-                ]
-            },
+            confirmPassword: {
+                identifier: 'confirmPassword',
+                rules: [{
+                    type: 'empty',
+                    prompt: '請再次確認您的密碼'
+                }]
+            }
         }
     });
 
