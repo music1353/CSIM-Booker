@@ -113,20 +113,12 @@ $(function () {
         }
     });
 
-
-    //    $('#postConfirmBtn').bind('click', function () {
-    //        if ($('.ui.form').form('is valid')) {
-    //            $('.mini.modal').modal('show');
-    //        }
-    //    });
-
-
-    /* if all valid show modal
-    if ($('.ui.form').form('is valid')) {
-        // confirm posting
-        $('#postConfirmBtn').click(function () {
+    // confirm Post
+    $('#postConfirmBtn').bind('click', function (e) {
+        if ($('.ui.form').form('is valid')) {
+            e.preventDefault();
             $('.mini.modal').modal('show');
-        });
-    } */
+        }
+    });
 
 });

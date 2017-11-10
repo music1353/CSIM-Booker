@@ -79,7 +79,7 @@
                 <div class="ui grid">
                     <div class="four wide computer two wide mobile column"></div>
                     <div class="eight wide computer twelve wide mobile column">
-                        <form class="ui form" method="" action="">
+                        <form class="ui form" id="postForm">
                             <div class="ui field">
                                 <h4 class="ui dividing header">為你的教材選一張照片</h4>
                                 <div>
@@ -175,7 +175,7 @@
                             <div class="field">
                                 <textarea name="" id="" cols="30" rows="3" maxlength="15" style="resize: none;"></textarea>
                             </div>
-                            <input class="ui green button" type="submit" id="postConfirmBtn" value="確認">
+                            <button class="ui green button" type="submit" id="postConfirmBtn">確認</button>
                             <div class="ui error message"></div>
                         </form>
                     </div>
@@ -193,7 +193,7 @@
             <div class="content">確認刊登的內容都沒問題，並且發佈到平台上嗎？</div>
             <div class="actions">
                 <div class="ui cancel red button">取消</div>
-                <button class="ui right labeled icon green button"><i class="checkmark icon"></i>確定</button>
+                <input class="ui green button" type="submit" form="postForm" value="確定">
             </div>
         </div>
     </div>
