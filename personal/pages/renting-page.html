@@ -167,7 +167,7 @@
         <div class="ui tiny coupled feedback modal">
             <div class="header" style="text-align: center;">評價回饋</div>
             <div class="content">
-                <form class="ui form" method="" action="">
+                <form class="ui form" id="feedbackForm">
                     <h4 class="ui dividing header">請給你的借書者一些評價吧！</h4>
                     <div class="ui field">
                         <label>星等</label>
@@ -181,7 +181,7 @@
             </div>
             <div class="actions">
                 <div class="ui cancel red button">取消</div>
-                <button class="ui right labeled icon green button"><i class="checkmark icon"></i>確定</button>
+                <input class="ui green button" type="submit" form="feedbackForm" value="確認">
             </div>
         </div>
     </div>
