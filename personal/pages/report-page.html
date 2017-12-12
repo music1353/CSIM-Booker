@@ -83,22 +83,14 @@
                     <div class="eight wide computer twelve wide mobile column">
                         <form class="ui form">
                             <div class="nine wide field">
-                                <label>被檢舉人學號</label>
-                                <input type="number" placeholder="Reported ID" name="reportID">
+                                <label>被檢舉人名字</label>
+                                <input type="text" placeholder="Reported ID" name="reportID">
                             </div>
                             <div class="ui field">
                                 <label>檢舉事由</label>
-                                <div class="ui fluid selection dropdown" id="report-reason-dropdown">
-                                    <input type="hidden" name="changeReason">
-                                    <i class="dropdown icon"></i>
-                                    <div class="default text">Select Report Reason</div>
-                                    <div class="menu">
-                                        <div class="item" data-value="destroy-book">破壞借閱書籍</div>
-                                        <div class="item" data-value="late-book">未準時歸還書籍</div>
-                                    </div>
-                                </div>
+                                <textarea rows="7" style="resize: none;" nmae='reportReason' id='reportReason'></textarea>
                             </div>
-                            <input class="ui green button" type="submit" id="reportConfirmBtn" value="確認">
+                            <input class="ui green button" type="submit" name="reportConfirmBtn" value="確認">
                             <div class="ui error message"></div>
                         </form>
                     </div>

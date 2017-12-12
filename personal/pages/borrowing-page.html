@@ -164,7 +164,7 @@
             <div class="content">書籍借閱完畢，確定要歸還書籍嗎？</div>
             <div class="actions">
                 <div class="ui cancel red button">取消</div>
-                <button class="ui right labeled icon green button" id="firstModal-button"><i class="checkmark icon"></i>確定</button>
+                <button class="ui green button" id="firstModal-button">確定</button>
             </div>
         </div>
     </div>
@@ -175,7 +175,7 @@
         <div class="ui tiny coupled feedback modal">
             <div class="header" style="text-align: center;">評價回饋</div>
             <div class="content">
-                <form class="ui form" method="" action="">
+                <form class="ui form" method="POST" action="" id='borrowCommentForm'>
                     <h4 class="ui dividing header">請給你的書籍提供者一些評價吧！</h4>
                     <div class="ui field">
                         <label>星等</label>
@@ -189,7 +189,7 @@
             </div>
             <div class="actions">
                 <div class="ui cancel red button">取消</div>
-                <button class="ui right labeled icon green button"><i class="checkmark icon"></i>確定</button>
+                <input class="ui green button" type='submit' value='確定' form="borrowCommentForm">
             </div>
         </div>
     </div>

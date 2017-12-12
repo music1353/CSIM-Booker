@@ -110,6 +110,13 @@ $(function () {
                     prompt: '請選擇交書地點'
                 }]
             },
+            introduction: {
+                identifier: 'introduction',
+                rules: [{
+                    type: 'empty',
+                    prompt: '請簡單描述你的教材'
+                }]
+            },
         }
     });
 
