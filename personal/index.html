@@ -18,6 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
     <script src="https://cdn.bootcss.com/typed.js/2.0.6/typed.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/index-page.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
                     <a href="pages/post-page.html" class="item">刊登教材</a>
                     <a href="pages/borrow-page.html" class="item">借閱教材</a>
                     <div class="ui dropdown item">
-                        <img class="ui avatar image" src="images/navbar-user-img/man.png">&nbsp;蘇靖軒
+                        <img class="ui avatar image" src="images/avatar-img/boy-2.png">&nbsp;蘇靖軒
                         <i class="dropdown icon"></i>
                         <div class="menu">
                             <a href="pages/personal-page.html" class="item"><i class="user circle icon"></i>個人資料</a>
@@ -137,7 +138,7 @@
                         <!-- card1 -->
                         <div class="ui card">
                             <div class="content">
-                                <img class="ui avatar image" src="images/temp-avatar-img/girl-1.png"> 小美
+                                <img class="ui avatar image" src="images/avatar-img/girl-1.png"> 小美
                             </div>
                             <div class="image">
                                 <img src="images/temp-books-img/temp-calc.jpg">
@@ -163,7 +164,7 @@
                                     </div>
                                 </div>
                                 <div class="right floated meta" style="margin-left: 10px;">
-                                    <button class="ui green button">借閱</button>
+                                    <button class="ui green borrow button">借閱</button>
                                 </div>
 
                             </div>
@@ -174,7 +175,7 @@
                     <div class="column">
                         <div class="ui card">
                             <div class="content">
-                                <img class="ui avatar image" src="images/temp-avatar-img/boy-1.png"> 阿冠
+                                <img class="ui avatar image" src="images/avatar-img/boy-1.png"> 阿冠
                             </div>
                             <div class="image">
                                 <img src="images/temp-books-img/temp-java.jpg">
@@ -200,7 +201,7 @@
                                     </div>
                                 </div>
                                 <div class="right floated meta" style="margin-left: 10px;">
-                                    <button class="ui green button">借閱</button>
+                                    <button class="ui green borrow button">借閱</button>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +211,7 @@
                     <div class="column">
                         <div class="ui card">
                             <div class="content">
-                                <img class="ui avatar image" src="images/temp-avatar-img/girl-2.png"> 琪琪
+                                <img class="ui avatar image" src="images/avatar-img/girl-2.png"> 琪琪
                             </div>
                             <div class="image">
                                 <img src="images/temp-books-img/temp-algo.jpg">
@@ -236,7 +237,7 @@
                                     </div>
                                 </div>
                                 <div class="right floated meta" style="margin-left: 10px;">
-                                    <button class="ui green button">借閱</button>
+                                    <button class="ui green borrow button">借閱</button>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +247,7 @@
                     <div class="four wide column">
                         <div class="ui card">
                             <div class="content">
-                                <img class="ui avatar image" src="images/temp-avatar-img/boy-2.png"> 鳴人
+                                <img class="ui avatar image" src="images/avatar-img/boy-2.png"> 鳴人
                             </div>
                             <div class="image">
                                 <img src="images/temp-books-img/temp-acc.jpg">
@@ -272,7 +273,7 @@
                                     </div>
                                 </div>
                                 <div class="right floated meta" style="margin-left: 10px;">
-                                    <button class="ui green button">借閱</button>
+                                    <button class="ui green borrow button">借閱</button>
                                 </div>
                             </div>
                         </div>
@@ -282,6 +283,20 @@
         </div>
     </section>
     <!-- recommend-section end -->
+    
+    <!-- borrow-modal start -->
+    <div class="borrow-modal">
+        <div class="ui mini coupled borrow modal">
+            <div class="header" style="text-align: center;">借閱書籍</div>
+            <div class="content">確定要借閱書籍嗎？</div>
+            <div class="actions">
+                <div class="ui cancel red button">取消</div>
+                <button class="ui green button" id="borrowModal-button">確定</button>
+            </div>
+        </div>
+    </div>
+    <!-- borrow-modal end -->
+
 
     <!-- footer start -->
     <footer>
