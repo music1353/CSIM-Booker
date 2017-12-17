@@ -175,7 +175,7 @@
         <div class="ui tiny coupled feedback modal">
             <div class="header" style="text-align: center;">評價回饋</div>
             <div class="content">
-                <form class="ui form" method="POST" action="" id='borrowCommentForm'>
+                <form class="ui form">
                     <h4 class="ui dividing header">請給你的書籍提供者一些評價吧！</h4>
                     <div class="ui field">
                         <label>星等</label>
@@ -189,11 +189,21 @@
             </div>
             <div class="actions">
                 <div class="ui cancel red button">取消</div>
-                <input class="ui green button" type='submit' value='確定' form="borrowCommentForm">
+                <input class="ui green button" id="return-complete-btn" type='submit' value='確定' form="borrowCommentForm">
             </div>
         </div>
     </div>
     <!-- feedback-modal end -->
+    
+    <!-- return-complete-modal start -->
+    <div class="return-complete-modal">
+        <div class="ui mini coupled return-complete modal">
+            <div class="content" style="text-align: center; font-size: 25px;">
+                <i class="check circle outline icon" style="color: green;"></i>歸還成功！
+            </div>
+        </div>
+    </div>
+    <!-- return-complete-modal end -->
 
     <!-- footer start -->
     <footer>
