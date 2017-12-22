@@ -9,4 +9,10 @@ $(function () {
         }
     });
 
+    // ellipsis show text
+    $('body').on('mouseenter', '.ellipsis', function () {
+        if (!this.title) {
+            this.title = $(this).text();
+        }
+    });
 });

@@ -19,6 +19,7 @@ $(function () {
 
     // show loginModal
     $('#loginButton').bind('click', function () {
+        $('#loginModal form').attr("runat", "server")
         $('#loginModal').modal('show');
     });
 
